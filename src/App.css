@@ -1,0 +1,68 @@
+.padre{
+  display: flex;
+  align-items: center; /* alinear los items al centro */
+  height: 100%;  /* para que ocupe el 100% de la caja principal */
+}
+
+
+/* para que no se desborde */
+.tamaño-imagen{
+    width: 100%;
+    height: 800px;
+    margin-top: 100px; /* separacion del principio */
+}
+
+/* imagen del perfil */
+.estilo-profile{
+border-radius: 50% ; /* para redondear bordes */
+/* height y width de la misma medidad porque es circular */
+height: 120px;
+width: 120px;
+margin: 0 auto;/*  para que se ponga en el centro */
+margin-top: 20px;
+margin-bottom: 20px; 
+}
+
+.cajatexto{
+    background-color: rgb(227, 243, 242);
+    border-color: rgb(14, 72, 231);
+    border-radius: 30px;
+    width: 100%;
+    padding: 15px;
+    border-width: 1px;
+    margin-bottom: 20px;
+}
+
+.cajatexto:focus{
+    outline: 1px solid cornflowerblue;
+    box-shadow: 0 0 10px cornflowerblue;
+}
+
+.btnform{
+    background-color: rgb(77, 164, 199);
+    border-color: rgb(14, 72, 231);
+    border-radius: 30px;
+    width: 50%;
+    padding: 15px;
+    border-width: 1px;
+    margin-bottom: 20px;
+  
+}
+
+.texto{
+    font-size: 15px;
+    color: rgb(5, 5, 5);
+    font-family: Arial, Helvetica, sans-serif ;
+    margin-top: 5px;
+}
+
+.btnswicth{
+    background-color: rgb(159, 207, 228);
+    border-color: rgb(8, 70, 240);
+    border-radius: 30px;
+    width: 40%;
+    padding: 8px;
+    border-width: 1px;
+    font-size: 16px;
+
+}
