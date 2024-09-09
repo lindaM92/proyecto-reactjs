@@ -12,7 +12,9 @@ const Login = () => {
   const [registrando, setRegistrando] = useState(false);
   // funcion con async porque es asincrona y con e porque va a recibir un email
   const funAutenticacion = async (e) => {
+    // es para que o se este actualizando
     e.preventDefault();
+    //capturandoa travez del id los valores
     const correo = e.target.elements.email.value;
     const contraseña = e.target.elements.password.value;
 
@@ -26,9 +28,10 @@ const Login = () => {
       try {
         await createUserWithEmailAndPassword(auth, correo, contraseña);
       } catch (error) {
-        alert("¿Seguro que aun no tienes registro?")
+        alert("¡UPS! algo salio mal con tu registro")
       }
     } else {
+      // para manejar los errores e informarle al usuario que algo sucede
       try {
         await signInWithEmailAndPassword(auth, correo, contraseña);
       } catch (error) {

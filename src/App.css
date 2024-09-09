@@ -1,3 +1,4 @@
+/* esta caja padre es la que contiene al formulario */
 .padre{
   display: flex;
   align-items: center; /* alinear los items al centro */
